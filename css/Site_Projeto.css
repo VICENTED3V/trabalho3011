@@ -487,4 +487,107 @@ aside img{
 
  }
 	
- }
+ /* Para dispositivos com largura de tela até 930px */
+@media only screen and (max-width: 930px) {
+    body {
+        width: 100%;
+    }
+
+    #nav, .dados {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #logo img, .dados a {
+        margin: 0 auto; /* Centraliza o logo e os links da navegação */
+    }
+
+    .nome, .sobre, .description, #certi, #anos, #dadosB, .hist {
+        width: 100%;
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    aside, aside img {
+        width: 100%;
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .containerA, .containerB {
+        flex-direction: column;
+        width: 100%;
+        float: none;
+    }
+
+    .slider, .servic, .rodapecontainer, .iconesrodape, #endereco, #celular {
+        width: 100%;
+        float: none;
+    }
+
+    .servic p, .imagens1 {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Para dispositivos com largura de tela até 700px */
+@media only screen and (max-width: 700px) {
+    /* Faça ajustes adicionais para tamanhos de tela ainda menores */
+    #nav, .dados {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nome, .sobre, .description, #certi, #anos, #dadosB, .hist {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px; /* Adicione algum padding para não tocar as bordas */
+    }
+
+    aside, aside img {
+        width: 100%;
+    }
+
+    .containerA, .containerB, .container2 {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .slides, .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .servic, .rodapecontainer, .iconesrodape, #endereco, #celular {
+        width: 100%;
+    }
+
+    .servic p, .imagens1 {
+        width: 100%;
+    }
+
+    .iconesrodape a {
+        margin: 5px;
+    }
+
+    .rodapenav ul, .rodapenav ul li a {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px; /* Diminua o tamanho da fonte para se ajustar melhor */
+    }
+
+    .direitosreservados {
+        flex-direction: column;
+        text-align: center; /* Centraliza o texto dos direitos autorais */
+    }
+}
+
+
